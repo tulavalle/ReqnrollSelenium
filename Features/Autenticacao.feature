@@ -1,4 +1,5 @@
-﻿Funcionalidade: Autenticação
+﻿# language: pt
+Funcionalidade: Autenticação
 	Sendo um usuãrio cadastrado
 	Pode informar seus dados de autenticação
 	Para acessar o sistema

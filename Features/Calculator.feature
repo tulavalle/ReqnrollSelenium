@@ -1,3 +1,4 @@
+# language: pt
 Funcionalidade: Calculator
 
 Simple calculator for adding two numbers
