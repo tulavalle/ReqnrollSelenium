@@ -1,3 +1,3 @@
-global using FluentAssertions;
 global using Reqnroll;
+global using ReqnrollSelenium.Support;
 global using Xunit;

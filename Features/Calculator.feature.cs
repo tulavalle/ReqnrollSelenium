@@ -39,7 +39,7 @@ namespace ReqnrollSelenium.Features
         public static async System.Threading.Tasks.Task FeatureSetupAsync()
         {
             testRunner = Reqnroll.TestRunnerManager.GetTestRunnerForAssembly(null, Reqnroll.xUnit.ReqnrollPlugin.XUnitParallelWorkerTracker.Instance.GetWorkerId());
-            Reqnroll.FeatureInfo featureInfo = new Reqnroll.FeatureInfo(new System.Globalization.CultureInfo("pt"), "Features", "Calculator", "Simple calculator for adding two numbers", ProgrammingLanguage.CSharp, featureTags);
+            Reqnroll.FeatureInfo featureInfo = new Reqnroll.FeatureInfo(new System.Globalization.CultureInfo("pt-BR"), "Features", "Calculator", "Simple calculator for adding two numbers", ProgrammingLanguage.CSharp, featureTags);
             await testRunner.OnFeatureStartAsync(featureInfo);
         }
         
