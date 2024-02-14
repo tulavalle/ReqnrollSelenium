@@ -24,7 +24,8 @@ namespace ReqnrollSelenium.Support
         public void CreateDriver()
         {
             _driver = DriverFactory.GetDriver();
-            _scenarioContext.Set<IWebDriver>(_driver);
+            _driver.Manage().Window.Maximize();
+            _scenarioContext.Set(_driver);
             _outputHelper.WriteLine("Driver inicializado com sucesso.");
         }
 
