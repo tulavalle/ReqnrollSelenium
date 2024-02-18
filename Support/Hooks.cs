@@ -1,5 +1,4 @@
-﻿using OpenQA.Selenium;
-using ReqnrollSelenium.Drivers;
+﻿using ReqnrollSelenium.Drivers;
 
 [assembly: CollectionBehavior(DisableTestParallelization = false, MaxParallelThreads = 10)]
 namespace ReqnrollSelenium.Support

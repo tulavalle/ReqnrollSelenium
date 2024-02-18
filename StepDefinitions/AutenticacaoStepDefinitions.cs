@@ -1,8 +1,4 @@
-﻿using FluentAssertions;
-using OpenQA.Selenium;
-using ReqnrollSelenium.Pages;
-
-namespace ReqnrollSelenium.StepDefinitions
+﻿namespace ReqnrollSelenium.StepDefinitions
 {
     [Binding]
     public class AutenticacaoStepDefinitions

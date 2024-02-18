@@ -1,6 +1,4 @@
-﻿using OpenQA.Selenium;
-
-namespace ReqnrollSelenium.Pages
+﻿namespace ReqnrollSelenium.Pages
 {
     public class ProductsPage(IWebDriver driver)
     {
@@ -10,7 +8,5 @@ namespace ReqnrollSelenium.Pages
         {
             return AppLogo.Text;
         }
-
-
     }
 }

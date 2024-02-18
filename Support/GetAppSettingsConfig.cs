@@ -6,7 +6,7 @@ namespace ReqnrollSelenium.Support
     {
         protected GetAppSettingsConfig() { }
 
-        private static string _testProjectDirectory = "";
+        private static string _testProjectDirectory = string.Empty;
         public static string TestProjectDirectory { get => _testProjectDirectory; }
 
         private static IConfigurationRoot? _configuration;
@@ -21,9 +21,7 @@ namespace ReqnrollSelenium.Support
                 if (_configuration == null)
                     Setup();
 
-#pragma warning disable CS8603 // Possible null reference return.
-                return _configuration;
-#pragma warning restore CS8603 // Possible null reference return.
+                return _configuration ?? throw new Exception("Não foi possível ler o arquivo de configuração. Verifique.");
             }
         }
 
@@ -39,7 +37,7 @@ namespace ReqnrollSelenium.Support
         /// <summary>
         /// Busca as configurações do appsettings.json.
         /// </summary>
-        public static void Setup(string configFile = "appsettings.json")
+        private static void Setup(string configFile = "appsettings.json")
         {
             var builder = new ConfigurationBuilder()
                             .SetBasePath(AppDomain.CurrentDomain.BaseDirectory)

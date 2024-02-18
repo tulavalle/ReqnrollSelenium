@@ -1,6 +1,4 @@
-﻿using OpenQA.Selenium;
-
-namespace ReqnrollSelenium.Pages
+﻿namespace ReqnrollSelenium.Pages
 {
     public class AutenticacaoPage(IWebDriver driver)
     {

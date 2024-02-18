@@ -1,4 +1,5 @@
 ﻿# language: pt
+
 Funcionalidade: Autenticação
 	Sendo um usuãrio cadastrado
 	Pode informar seus dados de autenticação
@@ -9,10 +10,9 @@ Contexto:
 
 Regra: Deve ser possível informar dados de autenticação para acessar o sistema
 
-Cenario: Autenticação: Ao acessar o sistema o usuário poderáa informar seus dados e solicitar acesso ao sistema
+Cenário: Autenticação: Ao acessar o sistema o usuário poderáa informar seus dados e solicitar acesso ao sistema
 	Quando solicita para realizar o login informando seus dados de autenticação
 		| Campo    | Valor         |
 		| Username | standard_user |
 		| Password | secret_sauce  |
-	Entao acessa o sistema "Swag Labs"
-
+	Então acessa o sistema "Swag Labs"
