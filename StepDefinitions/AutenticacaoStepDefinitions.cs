@@ -15,8 +15,8 @@
         private AutenticacaoPage autenticacaoPage;
         private AutenticacaoPage AutenticacaoPage => autenticacaoPage ??= new AutenticacaoPage(_driver);
 
-        private ProductsPage productsPage;
-        private ProductsPage ProductsPage => productsPage ??= new ProductsPage(_driver);
+        private ProdutosPage produtosPage;
+        private ProdutosPage ProdutosPage => produtosPage ??= new ProdutosPage(_driver);
 
         [Given("que o usuário acessa o sistema {string}")]
         public void GivenQueOUsuarioAcessaOSistema(string url)
@@ -34,8 +34,9 @@
         [Then("acessa o sistema {string}")]
         public void ThenAcessaOSistema(string system)
         {
-            var systemFound = ProductsPage.GetTextPage();
+            var systemFound = ProdutosPage.GetTextPage();
             systemFound.Should().Be(system);
         }
     }
 }
+
