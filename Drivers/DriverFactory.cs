@@ -7,7 +7,7 @@ using OpenQA.Selenium.Firefox;
 namespace ReqnrollSelenium.Drivers;
 public class DriverFactory
 {
-    public static IConfigurationRoot? Configuration { get; set; }
+    public static IConfigurationRoot Configuration { get; set; }
 
     protected DriverFactory() { }
 
@@ -17,7 +17,7 @@ public class DriverFactory
         Configuration = GetAppSettingsConfig.Configuration;
         GetAppSettingsConfig.Initialize(directoryDefaultProject);
 
-        string? browser = Configuration != null
+        string browser = Configuration != null
             ? Configuration["driverSettings:browser"]
             : throw new Exception("Não foi possível ler o appsettings. Verifique.");
 

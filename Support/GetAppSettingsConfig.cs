@@ -9,7 +9,7 @@ namespace ReqnrollSelenium.Support
         private static string _testProjectDirectory = string.Empty;
         public static string TestProjectDirectory { get => _testProjectDirectory; }
 
-        private static IConfigurationRoot? _configuration;
+        private static IConfigurationRoot _configuration;
 
         /// <summary>
         /// Verifica de já possui as configurações, se não, as procura no appsettings.json.

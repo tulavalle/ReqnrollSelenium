@@ -10,7 +10,7 @@ Contexto:
 
 Regra: Deve ser possível informar dados de autenticação para acessar o sistema
 
-Cenário: Autenticação: Ao acessar o sistema o usuário poderáa informar seus dados e solicitar acesso ao sistema
+Cenário: Autenticação: Ao acessar o sistema o usuário poderá informar seus dados e solicitar acesso ao sistema
 	Quando solicita para realizar o login informando seus dados de autenticação
 		| Campo    | Valor         |
 		| Username | standard_user |
